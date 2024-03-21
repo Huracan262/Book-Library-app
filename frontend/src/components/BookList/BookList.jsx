@@ -6,6 +6,10 @@ function BookList() {
   const books = useSelector(state => state.books)
   const dispatch = useDispatch()
 
+  const handleDeleteBook = (id) => {
+    dispatch(deleteBook(id))
+  }
+
   return (
     <div className="app-block book-list">
       <h2>Список книг</h2>
@@ -21,7 +25,7 @@ function BookList() {
               </div>
 
               <div className="book-actions">
-                <button type="button" onClick={event => dispatch(deleteBook(book))} >Удалить это гавно</button>
+                <button type="button" onClick={()=> handleDeleteBook(book.id)} >Удалить это гавно</button>
               </div>
             </li>
           ))}
