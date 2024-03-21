@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Book library app</h1>
+        <h1>Моя библиотека</h1>
       </header>
 
       <main className="app-main">

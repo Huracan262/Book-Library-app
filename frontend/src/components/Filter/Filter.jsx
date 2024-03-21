@@ -3,7 +3,7 @@ import './Filter.css'
 function Filter() {
   return (
     <div className="app-block filter">
-      <h2>Filters</h2>
+      <h2>Фильтры</h2>
     </div>
   )
 }
