@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from 'react-redux'
-import './BookList.css'
 import {deleteBook} from '../../redux/books/actionCreators'
+import './BookList.css'
 
 function BookList() {
   const books = useSelector(state => state.books)
