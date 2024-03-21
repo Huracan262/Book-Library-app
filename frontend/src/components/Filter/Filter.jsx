@@ -3,7 +3,9 @@ import './Filter.css'
 function Filter() {
   return (
     <div className="app-block filter">
-      <h2>Фильтры</h2>
+      <div className="filter-group">
+        <input type="text" placeholder="Введите значение для фильтра..." />
+      </div>
     </div>
   )
 }
